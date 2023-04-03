@@ -4,10 +4,14 @@
     {
         header("Location: auth.php");
     }
+    if($_SESSION["admin"])
+    {
+        require('admin.php');
+    }
 ?>
 
 <div class="content">
-    <form action="" method="get">
+    <form action="onlinestore.php" method="get">
         <input type="text" name="tasks" id="tasks" placeholder="task">
         <input type="submit" name="ins" id="ins" value="Добавить">
         <input type="submit" name="exit" value="Выход">

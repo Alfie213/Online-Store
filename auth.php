@@ -23,8 +23,9 @@ if($_SESSION != null)
             //session_start();
             foreach($res as $result)
             {
-                $_SESSION["email"] = $result["email"];
                 $_SESSION["idUser"] = $result["id_user"];
+                $_SESSION["email"] = $result["email"];
+                $_SESSION["admin"] = $result["admin"];
                 $_SESSION["isStarted"] = true;
             }
             header('Location: index.php');
