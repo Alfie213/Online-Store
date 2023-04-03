@@ -36,9 +36,9 @@
     <link rel="stylesheet" href="./styles/authreg.css">
 </head>
 <body>
-    <div id="auth">
-        <form action="registration.php" name="form2" class="form1" method="get" onsubmit="return FormData();">
-            <div class="register_form">
+    <div id="authreg">
+        <form action="registration.php" name="form" method="get" onsubmit="return FormData();">
+            <div class="form">
 
                 <label for="">Name</label>
                 <input type="username" name="username" class="username">
@@ -49,8 +49,8 @@
                 <label for="">Password</label>
                 <input type="password" name="password" class="password">
 
+                <input type="submit" value="register" name="reg" class="reg">
             </div>
-        <input type="submit" value="register" name="reg" class="reg">
         </form>
     </div>
 </body>

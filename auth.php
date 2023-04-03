@@ -45,15 +45,15 @@ if($_SESSION != null)
     <link rel="stylesheet" href="./styles/authreg.css">
 </head>
 <body>
-    <div id="auth">
+    <div id="authreg">
         <form action="auth.php" name="form1" class="form1" method="get" onsubmit="return FormData();">
-            <div class="auth_form">
+            <div class="form">
                 <label for="">Email</label>
                 <input type="email" name="email" class="email">
                 <label for="">password</label>
                 <input type="password" name="password" class="password">
+                <input type="submit" value="sign in" name="sub" class="sub">
             </div>
-        <input type="submit" value="sign in" name="sub" class="sub">
         </form>
     </div>
 </body>

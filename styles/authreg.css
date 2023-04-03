@@ -1,8 +1,8 @@
-#auth {
+#authreg {
     min-height: 70vh;
 }
 
-.auth_form, #auth {
+.form {
     display: flex;
     flex-direction: column;
     justify-content: center;
