@@ -5,7 +5,6 @@ require('data.php');
 $con = mysqli_connect($host, $user, $pas) or die ('Error con');
 mysqli_select_db($con, $db) or die ('Error db');
 $request = "SELECT * FROM `users`";
-print( $request);
 $res = mysqli_query($con, $request);
 foreach($res as $result)
 {
@@ -15,6 +14,16 @@ foreach($res as $result)
         <label class='coolText---'>".$result['name']."</label>
         <label class='coolText---'>".$result['email']."</label>
         <label class='coolText---'>".$result['admin']."</label>
+        <input type='checkbox' name='checkbox' disabled='disabled' value='".$result['id_user']."'");
+    if($result['admin'])
+    {
+        print("checked>");
+    }
+    else
+    {
+        print(">");
+    }
+    print("
     </li>
     ");
 }
