@@ -46,7 +46,7 @@ if($_SESSION != null)
 </head>
 <body>
     <div id="auth">
-        <form name="form1" class="form1" method="get" onsubmit="return FormData();">
+        <form action="auth.php" name="form1" class="form1" method="get" onsubmit="return FormData();">
             <div class="auth_form">
                 <label for="">Email</label>
                 <input type="email" name="email" class="email">
