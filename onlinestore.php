@@ -18,6 +18,33 @@
     </form>
 </div>
 
+<ul class="products clearfix">
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+	<li class="product-wrapper">
+		<a href="" class="product"></a>
+	</li>
+</ul>
+
 <?php
 if(isset($_REQUEST['exit']))
 {
