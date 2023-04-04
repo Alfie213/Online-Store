@@ -1,3 +1,4 @@
+/* Сетка товаров */
 .product-wrapper {
 	display: block;
 	width: 100%;
@@ -42,6 +43,7 @@
 	padding: 0;
 }
 
+/* Фото товара */
 .product-photo {
 	position: relative;
 	padding-bottom: 100%;
@@ -62,4 +64,25 @@
 
 .product:hover .product-photo img {
 	transform: scale(1.05);
+}
+
+/* Описание товара */
+.product p {
+	position: relative;
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.4em;
+	height: 5.6em;
+	overflow: hidden;
+}
+
+.product p:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 4.2em;
+	height: 1.6em;
+	background: linear-gradient(to left top, #fff, rgba(255, 255, 255, 0));
 }

@@ -22,12 +22,18 @@
 	<li class="product-wrapper">
 		<a href="" class="product">
 			<div class="product-photo">
-	        <img src="./media/cats.jpg" alt="">
+	        <img src="./media/100.jpg" alt="">
         	</div>
+			<p>href</p>
 		</a>
 	</li>
 	<li class="product-wrapper">
-		<a href="" class="product"></a>
+		<a href="" class="product">
+			<div class="product-photo">
+	        <img src="./media/cats.jpg" alt="">
+        	</div>
+			<p>url</p>
+		</a>
 	</li>
 	<li class="product-wrapper">
 		<a href="" class="product"></a>
