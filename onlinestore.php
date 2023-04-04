@@ -20,7 +20,11 @@
 
 <ul class="products clearfix">
 	<li class="product-wrapper">
-		<a href="" class="product"></a>
+		<a href="" class="product">
+			<div class="product-photo">
+	        <img src="./media/cats.jpg" alt="">
+        	</div>
+		</a>
 	</li>
 	<li class="product-wrapper">
 		<a href="" class="product"></a>
