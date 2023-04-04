@@ -1,6 +1,6 @@
 <?php
 
-// require('header.html');
+require('header.html');
 
 require('onlinestore.php');
 
