@@ -26,7 +26,7 @@ Vue.component('product-item', {
         },
         show(product) {
             // console.log("show");
-            OutputFile('data.txt');
+            Goo();
         },
     }
 });
@@ -40,3 +40,43 @@ function OutputFile(src)
         // return returnValue;
         console.log(request.responseText);
 }
+
+function Foo()
+{
+    localStorage.setItem();
+    console.log('saved');
+}
+
+function Goo()
+{
+    console.log(localStorage.getItem('id'));
+}
+
+// function WriteInFile(src, data)
+// {
+//     var textFile = null,
+//   makeTextFile = function (text) {
+//     var data = new Blob([text], {type: 'text/plain'});
+
+//     // If we are replacing a previously generated file we need to
+//     // manually revoke the object URL to avoid memory leaks.
+//     if (textFile !== null) {
+//       window.URL.revokeObjectURL(textFile);
+//     }
+
+//     textFile = window.URL.createObjectURL(data);
+
+//     // returns a URL you can use as a href
+//     return textFile;
+//   };
+
+
+//     // console.log('in write');
+//     // let formData = new FormData(src);
+//     // formData.append("some", "choto");
+
+
+//     // var request = new XMLHttpRequest();
+//     //     request.open("POST", src, false);
+//     //     request.se
+// }
