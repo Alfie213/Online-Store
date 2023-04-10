@@ -33,12 +33,10 @@ Vue.component('product-item', {
 
 function OutputFile(src)
 {
-    let xhr = new XMLHttpRequest();
-    xhr.open('GET', src, true);
-    xhr.onreadystatechange = function() {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-        console.log(xhr.responseText);
-    }
-    };
-    xhr.send();
+    var request = new XMLHttpRequest();
+        request.open("GET", src, false);
+        request.send(null);
+        // var returnValue = request.responseText;
+        // return returnValue;
+        console.log(request.responseText);
 }
