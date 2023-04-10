@@ -14,5 +14,5 @@ Vue.component('header_component', {
         </nav>
     </header>`
 });
-
+// style="font-size: 15px;"
 // если <a :href='[item.ref]'> не работает, меняем [item.ref] на {{item.ref}}

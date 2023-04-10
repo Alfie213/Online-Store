@@ -28,4 +28,4 @@ Vue.component('product-item', {
             console.log("show");
         },
     }
-})
+});
