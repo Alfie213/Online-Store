@@ -25,7 +25,20 @@ Vue.component('product-item', {
             console.log(product.title + " " + product.id);
         },
         show(product) {
-            console.log("show");
+            // console.log("show");
+            OutputFile('data.txt');
         },
     }
 });
+
+function OutputFile(src)
+{
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', src, true);
+    xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log(xhr.responseText);
+    }
+    };
+    xhr.send();
+}
