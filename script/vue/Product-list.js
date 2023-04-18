@@ -23,6 +23,7 @@ Vue.component('product-item', {
         addItemCart(product) {
             console.log("add");
             console.log(product.title + " " + product.id);
+            AddToCart();
         },
         show(product) {
             // console.log("show");
@@ -31,26 +32,50 @@ Vue.component('product-item', {
     }
 });
 
-function OutputFile(src)
+function AddToCart(product_id)
 {
-    var request = new XMLHttpRequest();
-        request.open("GET", src, false);
-        request.send(null);
-        // var returnValue = request.responseText;
-        // return returnValue;
-        console.log(request.responseText);
+    let xhr = new XMLHttpRequest();
+    let url = "./data.php";
+    let params = "query=INSERT INTO `products` (`id_product`, `name`) VALUES (NULL, 'Bread');";
+    xhr.open("POST", url, true);
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4 && xhr.status == 200) {
+            let response = xhr.responseText;
+            if (response) {
+                let data = JSON.parse(response);
+                console.log(data);
+            } else {
+                console.log("Empty response from server");
+            }
+        } else if (xhr.readyState == 4 && xhr.status != 200) {
+            console.log("Error executing request: " + xhr.status);
+        }
+    }
+    xhr.send(params);
+    console.log("end of add");
 }
 
-function Foo()
-{
-    localStorage.setItem();
-    console.log('saved');
-}
+// function OutputFile(src)
+// {
+//     var request = new XMLHttpRequest();
+//         request.open("GET", src, false);
+//         request.send(null);
+//         // var returnValue = request.responseText;
+//         // return returnValue;
+//         console.log(request.responseText);
+// }
 
-function Goo()
-{
-    console.log(localStorage.getItem('id'));
-}
+// function Foo()
+// {
+//     localStorage.setItem();
+//     console.log('saved');
+// }
+
+// function Goo()
+// {
+//     console.log(localStorage.getItem('id'));
+// }
 
 // function WriteInFile(src, data)
 // {
